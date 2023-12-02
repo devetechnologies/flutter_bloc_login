@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "357901540825",
+    "project_id": "devetechnologiesadmin",
+    "storage_bucket": "devetechnologiesadmin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357901540825:android:deeee5643fd4db30a30dc8",
+        "android_client_info": {
+          "package_name": "com.example.devetechnologies_flutter_login"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXjkgzaOx_WnItOMCDMT0MBYDGB_WxDpU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
