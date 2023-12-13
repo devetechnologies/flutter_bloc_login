@@ -43,10 +43,10 @@ class LogInWithEmailAndPasswordFailure implements Exception {
   const LogInWithEmailAndPasswordFailure(
       [this.message = 'An unknown exception occurred.']);
 
-  //creating athentication message from firebase
+  //creating authentication message from firebase
   factory LogInWithEmailAndPasswordFailure.fromCode(String code) {
     switch (code) {
-      case 'invalid-email':
+      case 'invalid-emaill':
         return const LogInWithEmailAndPasswordFailure(
             'Email is not valid or badly formatted.');
 
@@ -61,7 +61,9 @@ class LogInWithEmailAndPasswordFailure implements Exception {
       case 'wrong-password':
         return const LogInWithEmailAndPasswordFailure(
             'Incorrect password, please try again.');
-
+      case 'invalid-credential':
+        return const LogInWithEmailAndPasswordFailure(
+            'Inavlid loging credentials');
       default:
         return const LogInWithEmailAndPasswordFailure();
     }
@@ -201,7 +203,9 @@ class AuthenticationRepository {
   //LogOut user by google or firebase user
   Future<void> logOut() async {
     try {
-      await Future.wait([_firebaseAuth.signOut(), _googleSignIn.signOut()]);
+      await Future.wait([
+        _firebaseAuth.signOut(), /*_googleSignIn.signOut()*/
+      ]);
     } catch (e) {
       throw LogOutFailure();
     }

@@ -106,7 +106,7 @@ class _LoginButton extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30),
                   ),
-                  backgroundColor: const Color(0xFFFFD600),
+                  backgroundColor: const Color.fromARGB(255, 0, 255, 85),
                 ),
                 onPressed: state.isValid
                     ? () => context.read<LoginCubit>().logInWithCredentials()
@@ -132,7 +132,7 @@ class _GoogleLoginButton extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(30),
         ),
-        backgroundColor: theme.colorScheme.secondary,
+        backgroundColor: theme.colorScheme.onSecondaryContainer,
       ),
       icon: const Icon(FontAwesomeIcons.google, color: Colors.white),
       onPressed: () => context.read<LoginCubit>().logInWithGoogle(),

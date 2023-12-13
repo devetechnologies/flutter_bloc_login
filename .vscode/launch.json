@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "devetechnologies_flutter_login",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "devetechnologies_flutter_login (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "devetechnologies_flutter_login (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "authentication_login",
+            "cwd": "packages\\authentication_login",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "authentication_login (profile mode)",
+            "cwd": "packages\\authentication_login",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "authentication_login (release mode)",
+            "cwd": "packages\\authentication_login",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
